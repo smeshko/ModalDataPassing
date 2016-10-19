@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		B852E22A1DB7B03500D873CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852E2291DB7B03500D873CB /* AppDelegate.swift */; };
-		B852E22C1DB7B03500D873CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852E22B1DB7B03500D873CB /* ViewController.swift */; };
-		B852E22F1DB7B03500D873CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B852E22D1DB7B03500D873CB /* Main.storyboard */; };
 		B852E2311DB7B03500D873CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B852E2301DB7B03500D873CB /* Assets.xcassets */; };
 		B852E2341DB7B03500D873CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B852E2321DB7B03500D873CB /* LaunchScreen.storyboard */; };
+		B852E23E1DB7B04F00D873CB /* DirectDataPassingModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852E23B1DB7B04F00D873CB /* DirectDataPassingModalViewController.swift */; };
+		B852E23F1DB7B04F00D873CB /* DirectDataPassingParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852E23C1DB7B04F00D873CB /* DirectDataPassingParentViewController.swift */; };
+		B852E2401DB7B04F00D873CB /* DirectDataPassing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B852E23D1DB7B04F00D873CB /* DirectDataPassing.storyboard */; };
+		B852E2441DB7B11300D873CB /* DelegateDataPassingParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852E2431DB7B11300D873CB /* DelegateDataPassingParentViewController.swift */; };
+		B852E2461DB7B16900D873CB /* DelegateDataPassingModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B852E2451DB7B16900D873CB /* DelegateDataPassingModalViewController.swift */; };
+		B852E2491DB7B24400D873CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B852E2481DB7B24400D873CB /* Main.storyboard */; };
+		B852E24B1DB7B30800D873CB /* DelegateDataPassing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B852E24A1DB7B30800D873CB /* DelegateDataPassing.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B852E2261DB7B03500D873CB /* DataPassing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataPassing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B852E2291DB7B03500D873CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B852E22B1DB7B03500D873CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B852E22E1DB7B03500D873CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B852E2301DB7B03500D873CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B852E2331DB7B03500D873CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B852E2351DB7B03500D873CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B852E23B1DB7B04F00D873CB /* DirectDataPassingModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectDataPassingModalViewController.swift; sourceTree = "<group>"; };
+		B852E23C1DB7B04F00D873CB /* DirectDataPassingParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectDataPassingParentViewController.swift; sourceTree = "<group>"; };
+		B852E23D1DB7B04F00D873CB /* DirectDataPassing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DirectDataPassing.storyboard; sourceTree = "<group>"; };
+		B852E2431DB7B11300D873CB /* DelegateDataPassingParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateDataPassingParentViewController.swift; sourceTree = "<group>"; };
+		B852E2451DB7B16900D873CB /* DelegateDataPassingModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateDataPassingModalViewController.swift; sourceTree = "<group>"; };
+		B852E2481DB7B24400D873CB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B852E24A1DB7B30800D873CB /* DelegateDataPassing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DelegateDataPassing.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				B852E2281DB7B03500D873CB /* DataPassing */,
+				B852E2471DB7B22E00D873CB /* SupportingFiles */,
 				B852E2271DB7B03500D873CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,12 +66,41 @@
 			isa = PBXGroup;
 			children = (
 				B852E2291DB7B03500D873CB /* AppDelegate.swift */,
-				B852E22B1DB7B03500D873CB /* ViewController.swift */,
-				B852E22D1DB7B03500D873CB /* Main.storyboard */,
+				B852E2421DB7B09200D873CB /* DelegateDataPassing */,
+				B852E2411DB7B08700D873CB /* DirectDataPassing */,
+				B852E2481DB7B24400D873CB /* Main.storyboard */,
+			);
+			path = DataPassing;
+			sourceTree = "<group>";
+		};
+		B852E2411DB7B08700D873CB /* DirectDataPassing */ = {
+			isa = PBXGroup;
+			children = (
+				B852E23B1DB7B04F00D873CB /* DirectDataPassingModalViewController.swift */,
+				B852E23C1DB7B04F00D873CB /* DirectDataPassingParentViewController.swift */,
+				B852E23D1DB7B04F00D873CB /* DirectDataPassing.storyboard */,
+			);
+			name = DirectDataPassing;
+			sourceTree = "<group>";
+		};
+		B852E2421DB7B09200D873CB /* DelegateDataPassing */ = {
+			isa = PBXGroup;
+			children = (
+				B852E2431DB7B11300D873CB /* DelegateDataPassingParentViewController.swift */,
+				B852E2451DB7B16900D873CB /* DelegateDataPassingModalViewController.swift */,
+				B852E24A1DB7B30800D873CB /* DelegateDataPassing.storyboard */,
+			);
+			name = DelegateDataPassing;
+			sourceTree = "<group>";
+		};
+		B852E2471DB7B22E00D873CB /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				B852E2301DB7B03500D873CB /* Assets.xcassets */,
 				B852E2321DB7B03500D873CB /* LaunchScreen.storyboard */,
 				B852E2351DB7B03500D873CB /* Info.plist */,
 			);
+			name = SupportingFiles;
 			path = DataPassing;
 			sourceTree = "<group>";
 		};
@@ -96,6 +136,7 @@
 				TargetAttributes = {
 					B852E2251DB7B03500D873CB = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GR9SJM3FZP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,9 +164,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B852E24B1DB7B30800D873CB /* DelegateDataPassing.storyboard in Resources */,
 				B852E2341DB7B03500D873CB /* LaunchScreen.storyboard in Resources */,
+				B852E2401DB7B04F00D873CB /* DirectDataPassing.storyboard in Resources */,
 				B852E2311DB7B03500D873CB /* Assets.xcassets in Resources */,
-				B852E22F1DB7B03500D873CB /* Main.storyboard in Resources */,
+				B852E2491DB7B24400D873CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +179,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B852E22C1DB7B03500D873CB /* ViewController.swift in Sources */,
+				B852E23F1DB7B04F00D873CB /* DirectDataPassingParentViewController.swift in Sources */,
+				B852E23E1DB7B04F00D873CB /* DirectDataPassingModalViewController.swift in Sources */,
 				B852E22A1DB7B03500D873CB /* AppDelegate.swift in Sources */,
+				B852E2461DB7B16900D873CB /* DelegateDataPassingModalViewController.swift in Sources */,
+				B852E2441DB7B11300D873CB /* DelegateDataPassingParentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B852E22D1DB7B03500D873CB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B852E22E1DB7B03500D873CB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B852E2321DB7B03500D873CB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -260,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GR9SJM3FZP;
 				INFOPLIST_FILE = DataPassing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noname.DataPassing;
@@ -272,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GR9SJM3FZP;
 				INFOPLIST_FILE = DataPassing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noname.DataPassing;

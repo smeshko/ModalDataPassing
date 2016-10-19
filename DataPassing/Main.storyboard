@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lx2-pX-4Yh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fzp-Oy-6l3">
+            <objects>
+                <viewController id="Ttt-1k-hoc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jRq-s7-vfc"/>
+                        <viewControllerLayoutGuide type="bottom" id="TV1-bo-cm9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RDU-lJ-RyD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwM-2t-bvm">
+                                <state key="normal" title="Delegate"/>
+                                <connections>
+                                    <segue destination="CSK-Rw-a0k" kind="show" id="Lg6-bR-sku"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dw-VL-BDk">
+                                <state key="normal" title="Direct"/>
+                                <connections>
+                                    <segue destination="A3Z-Y1-NjD" kind="show" id="VOs-6I-UGT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TwM-2t-bvm" firstAttribute="bottom" secondItem="RDU-lJ-RyD" secondAttribute="centerY" constant="-10" id="7c2-In-g6O"/>
+                            <constraint firstItem="7Dw-VL-BDk" firstAttribute="centerX" secondItem="RDU-lJ-RyD" secondAttribute="centerX" id="8rV-cP-jf2"/>
+                            <constraint firstItem="7Dw-VL-BDk" firstAttribute="top" secondItem="RDU-lJ-RyD" secondAttribute="centerY" constant="10" id="Z8H-ef-ve6"/>
+                            <constraint firstItem="TwM-2t-bvm" firstAttribute="centerX" secondItem="RDU-lJ-RyD" secondAttribute="centerX" id="qnX-Q1-G5j"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dIx-hD-LLc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Msu-4k-TWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480.8" y="170.46476761619192"/>
+        </scene>
+        <!--DelegateDataPassing-->
+        <scene sceneID="g9x-Ix-JeD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DelegateDataPassing" id="CSK-Rw-a0k" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqe-jP-jCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2033" y="141"/>
+        </scene>
+        <!--DirectDataPassing-->
+        <scene sceneID="MAs-RC-w1q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DirectDataPassing" id="A3Z-Y1-NjD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYM-LS-T2H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2032" y="194"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="snK-Lj-X3p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lx2-pX-4Yh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YT3-YK-FTN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ttt-1k-hoc" kind="relationship" relationship="rootViewController" id="DxF-9I-6M9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVW-eY-1Uh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541.60000000000002" y="170.46476761619192"/>
+        </scene>
+    </scenes>
+</document>
