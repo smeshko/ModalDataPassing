@@ -1,9 +1,9 @@
 //
-//  ModalViewController.swift
-//  BachelorApp
+//  DirectDataPassingModalViewController.swift
+//  DataPassing
 //
 //  Created by Ivaylo Tsonev on 19/10/16.
-//  Copyright © 2016 tsonevInc. All rights reserved.
+//  Copyright © 2016 NoName. All rights reserved.
 //
 
 import UIKit
